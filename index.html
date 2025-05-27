@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentiCore - Your Partner in Business Transformation with AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full z-50" id="header">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold gradient-text">AgentiCore</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#what-is-agentic-ai" class="text-white hover:text-gray-200 transition-colors">About</a>
+                    <a href="#services" class="text-white hover:text-gray-200 transition-colors">Services</a>
+                    <a href="#why-us" class="text-white hover:text-gray-200 transition-colors">Why Us</a>
+                    <a href="#case-studies" class="text-white hover:text-gray-200 transition-colors">Case Studies</a>
+                    <a href="#contact" class="text-white hover:text-gray-200 transition-colors">Contact</a>
+                </div>
+                <a href="#contact" class="hidden md:inline-block bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors">Get Started</a>
+                <button class="md:hidden text-white" onclick="toggleMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="bg-gray-700 shadow-lg rounded-b-lg mx-4 mt-2">
+                <a href="#what-is-agentic-ai" class="block px-6 py-3 text-white hover:bg-gray-600" onclick="toggleMenu()">About</a>
+                <a href="#services" class="block px-6 py-3 text-white hover:bg-gray-600" onclick="toggleMenu()">Services</a>
+                <a href="#why-us" class="block px-6 py-3 text-white hover:bg-gray-600" onclick="toggleMenu()">Why Us</a>
+                <a href="#case-studies" class="block px-6 py-3 text-white hover:bg-gray-600" onclick="toggleMenu()">Case Studies</a>
+                <a href="#contact" class="block px-6 py-3 text-white hover:bg-gray-600" onclick="toggleMenu()">Contact</a>
+                <a href="#contact" class="block px-6 py-3 bg-white text-gray-700 text-center rounded-lg mx-4 my-4 hover:bg-gray-100" onclick="toggleMenu()">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center pt-20 text-white">
+        <div class="container mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">Achieve More. Faster. With Our Autonomous AI Solutions.</h1>
+                    <p class="text-xl mb-8 text-gray-100">AgentiCore helps businesses like yours achieve unprecedented efficiency, growth, and innovation by deploying intelligent AI that works independently to solve your biggest challenges.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-white text-gray-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-50 transition-colors text-center">Discover Your Business's AI Potential</a>
+                        <a href="#what-is-agentic-ai" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-600 transition-colors text-center">Learn More</a>
+                    </div>
+                </div>
+                <div class="hidden md:block" data-aos="fade-left">
+                    <lottie-player src="Animation - 1748096854042.json" background="transparent" speed="1" class="w-full max-w-lg mx-auto floating" autoplay></lottie-player>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Agentic AI? Section -->
+    <section id="what-is-agentic-ai" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-600" data-aos="fade-up">Imagine Your Business Working Smarter, All Day, Every Day.</h2>
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-xl text-gray-600 mb-8" data-aos="fade-up">
+                    Are you looking to: Reduce costs? Boost productivity? Make faster, smarter decisions? Unlock new revenue streams?
+                </p>
+                <p class="text-lg text-gray-700 mb-8" data-aos="fade-up">
+                    This is where Autonomous AI comes in: Think of it as a highly capable, tireless digital workforce. Instead of just automating single tasks, our AI solutions are designed to understand your bigger business goals. They can make decisions, learn from results, and proactively take actions to achieve those goals, freeing up your valuable team members to focus on strategic thinking and innovation.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="card-hover bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up">
+                    <div class="text-gray-600 text-3xl mb-3"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Increased Efficiency</h3>
+                    <p class="text-gray-600">Your critical tasks get done faster, with fewer errors.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-gray-600 text-3xl mb-3"><i class="fas fa-piggy-bank"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Cost Savings</h3>
+                    <p class="text-gray-600">Reduce manual labor and optimize resource allocation.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-gray-600 text-3xl mb-3"><i class="fas fa-brain"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Smarter Decisions</h3>
+                    <p class="text-gray-600">Get real-time insights to guide your business strategy.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-gray-600 text-3xl mb-3"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Enhanced Growth</h3>
+                    <p class="text-gray-600">Identify new opportunities and scale operations effortlessly.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-gray-600 text-3xl mb-3"><i class="fas fa-users"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Empowered Employees</h3>
+                    <p class="text-gray-600">Your team focuses on high-value work, not repetitive chores.</p>
+                </div>
+            </div>
+            <div class="text-center" data-aos="fade-up">
+                <a href="#services" class="bg-gray-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-700 transition-colors">Learn More About Agentic AI</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Agentic AI Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-600" data-aos="fade-up">Our Services</h2>
+            <p class="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto" data-aos="fade-up">We apply autonomous AI to solve common business problems and open new avenues for success. Here's how we can help:</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg flex flex-col" data-aos="fade-up">
+                    <div class="text-gray-600 text-4xl mb-4"><i class="fas fa-cogs"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Automate Complex Business Processes</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Streamline your operations, eliminate bottlenecks, and ensure consistency across your workflows. Example: Automating complex order processing, managing large-scale customer onboarding, or optimizing inventory management.</p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Reduce operational costs.</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Improve data accuracy & compliance.</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Increase throughput & speed.</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-gray-600 text-4xl mb-4"><i class="fas fa-comments"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Enhance Customer Experiences</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Provide exceptional, personalized service and support, improving customer satisfaction and loyalty. Example: Intelligent customer service that resolves issues autonomously, proactive engagement with high-value clients, or tailored product recommendations.</p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Boost customer satisfaction & loyalty.</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Improve response times & 24/7 availability.</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Reduce support overhead.</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-gray-600 text-4xl mb-4"><i class="fas fa-chart-pie"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Gain Deeper Business Insights</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Turn your data into clear, actionable intelligence, helping you make informed decisions quickly. Example: Predicting sales trends, identifying market opportunities, or pinpointing areas for cost reduction.</p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Uncover hidden market opportunities.</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Proactively mitigate risks.</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Drive data-driven strategies.</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-gray-600 text-4xl mb-4"><i class="fas fa-truck"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Accelerate Innovation & Research</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Speed up your development cycles and discover new possibilities by letting AI handle intensive data analysis and ideation. Example: Automating market research, identifying new product features, or exploring R&D avenues.</p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Reduce waste and carrying costs.</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Improve delivery times.</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Increase supply chain visibility.</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl shadow-lg flex flex-col" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-gray-600 text-4xl mb-4"><i class="fas fa-drafting-compass"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Custom Solutions for Unique Needs</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">If you have a specific challenge, we'll build an AI solution designed exactly for your business. Example: Tailored AI for specific industry regulations, optimizing highly specialized internal processes.</p>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Address specific business needs.</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Achieve competitive differentiation.</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Future-proof your operations.</li>
+                    </ul>
+                </div>
+                <div class="card-hover bg-gray-50 p-8 rounded-xl shadow-lg flex flex-col items-center justify-center text-center" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-gray-600 text-4xl mb-4"><i class="fas fa-concierge-bell"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">
+                    <p class="text-gray-600 text-sm mb-4">Ready to see how AgentiCore can revolutionize your business? </p>
+                    <a href="#contact" class="bg-gray-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-700 transition-colors text-sm mt-auto">Request a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose AgentiCore Section -->
+    <section id="why-us" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-600" data-aos="fade-up">Your Success is Our Priority. Our Expertise, Your Advantage.</h2>
+            <p class="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto" data-aos="fade-up">Partner with us to transform your business with AI solutions that deliver real results.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up">
+                    <div class="text-gray-600 text-3xl mb-3"><i class="fas fa-users"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Business-First Approach</h3>
+                    <p class="text-gray-600 text-sm">We start by understanding your goals, not just your tech needs. Our focus is on delivering solutions that drive real business outcomes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-gray-600 text-3xl mb-3"><i class="fas fa-tools"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Proven Results</h3>
+                    <p class="text-gray-600 text-sm">We focus on delivering measurable value and a clear return on your investment. Our success is measured by your business growth.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-gray-600 text-3xl mb-3"><i class="fas fa-chart-bar"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Tailored for You</h3>
+                    <p class="text-gray-600 text-sm">Our solutions are custom-built to fit seamlessly into your existing business and processes, ensuring maximum efficiency and adoption.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-gray-600 text-3xl mb-3"><i class="fas fa-shield-alt"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Experienced Team</h3>
+                    <p class="text-gray-600 text-sm">Our experts combine deep AI knowledge with practical business understanding to deliver solutions that work in the real world.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-gray-600 text-3xl mb-3"><i class="fas fa-headset"></i></div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Long-Term Partnership</h3>
+                    <p class="text-gray-600 text-sm">We're here for the long haul, ensuring your AI solutions evolve with your business and continue to drive value over time.</p>
+                </div>
+                 <div class="hidden lg:block p-6" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Team Collaboration" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Together Section -->
+    <section id="how-it-works" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-600" data-aos="fade-up">Your Journey to Autonomous AI, Simplified.</h2>
+            <p class="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto" data-aos="fade-up">A transparent, straightforward process designed for your success.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up">
+                    <div class="text-gray-600 text-5xl mb-6">1</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Understand Your Vision</h3>
+                    <p class="text-gray-600 text-sm">We sit down with you to truly grasp your business objectives and identify where AI can deliver the biggest impact.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-gray-600 text-5xl mb-6">2</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Design Your Smart Solution</h3>
+                    <p class="text-gray-600 text-sm">Our team designs a custom AI system tailored to your specific challenges and opportunities.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-gray-600 text-5xl mb-6">3</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Seamless Integration</h3>
+                    <p class="text-gray-600 text-sm">We integrate the AI into your existing systems, ensuring a smooth, hassle-free transition for your team.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-gray-600 text-5xl mb-6">4</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-600">Grow & Optimize</h3>
+                    <p class="text-gray-600 text-sm">We provide ongoing support, monitor performance, and help you continuously refine and expand your AI capabilities.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="#contact" class="bg-gray-600 text-white px-10 py-4 rounded-full font-semibold hover:bg-gray-700 transition-colors text-lg">Begin Your Business Transformation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="case-studies" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Real Results, Real Impact</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Case Study 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-gray-600 mb-4"><i class="fas fa-chart-line text-4xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Logistics Excellence</h3>
+                    <p class="text-gray-600">Automated warehouse operations leading to 40% efficiency increase and 25% cost reduction.</p>
+                </div>
+                <!-- Case Study 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-gray-600 mb-4"><i class="fas fa-users text-4xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Retail Innovation</h3>
+                    <p class="text-gray-600">AI-powered customer insights driving 30% increase in customer satisfaction scores.</p>
+                </div>
+                <!-- Case Study 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-gray-600 mb-4"><i class="fas fa-database text-4xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Financial Transformation</h3>
+                    <p class="text-gray-600">Reduced processing time by 60% while improving accuracy to 99.9% for a major bank.</p>
+                </div>
+                <!-- Case Study 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="text-gray-600 mb-4"><i class="fas fa-industry text-4xl"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Manufacturing Success</h3>
+                    <p class="text-gray-600">Predictive maintenance system reducing downtime by 35% and maintenance costs by 25%.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-gray-600 text-white py-3 px-8 rounded-lg hover:bg-gray-700 transition-colors">See More Success Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-gray-600 to-gray-700 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Unlock Smarter Growth. Schedule Your Free Strategy Session.</h2>
+                <p class="text-xl text-gray-100 mb-12" data-aos="fade-up">Let's discuss how our autonomous AI solutions can solve your unique business challenges and drive tangible results. No obligation, just insights.</p>
+                
+                <form class="bg-white p-8 sm:p-10 rounded-xl shadow-2xl text-gray-700" data-aos="fade-up">
+                    <div class="grid sm:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-1 text-left" for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Smith" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 transition-shadow" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1 text-left" for="company">Your Company</label>
+                            <input type="text" id="company" name="company" placeholder="Company Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 transition-shadow" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium mb-1 text-left" for="role">Your Role/Title</label>
+                        <input type="text" id="role" name="role" placeholder="e.g., CEO, Director of Operations" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 transition-shadow" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium mb-1 text-left" for="email">Business Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@company.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 transition-shadow" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium mb-1 text-left" for="challenge">What's your biggest business challenge right now?</label>
+                        <textarea id="challenge" name="challenge" rows="4" placeholder="Tell us about the challenges you're facing..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 transition-shadow" required></textarea>
+                    </div>
+                    <div class="mb-8 text-left">
+                        <label class="flex items-center">
+                            <input type="checkbox" name="subscribe" class="form-checkbox h-5 w-5 text-gray-600 border-gray-300 rounded focus:ring-gray-500">
+                            <span class="ml-2 text-sm text-gray-600">Yes, I'd like to receive valuable insights and updates from AgentiCore on business AI.</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="w-full bg-red-600 text-white py-4 px-8 rounded-full font-bold text-lg hover:bg-red-700 transition-colors transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-gray-300">Schedule My Strategy Session</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-400">AgentiCore</h3>
+                    <p class="text-gray-400 text-sm">Transforming businesses through intelligent automation and AI-driven solutions.</p>
+                    <div class="mt-6 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-400">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#hero" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Solutions</a></li>
+                        <li><a href="#why-us" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#success-stories" class="text-gray-400 hover:text-white transition-colors">Success Stories</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-400">Legal</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-400">Contact Us</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@agenticore.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Innovation Drive, Tech City, TC 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-sm text-gray-500">&copy; 2024 AgentiCore. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-white', 'shadow-lg');
+            } else {
+                header.classList.remove('bg-white', 'shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>

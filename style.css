@@ -1,0 +1,45 @@
+ :root {
+            --primary: #4B5563;
+            --secondary: #374151;
+            --accent: #9CA3AF;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #4B5563 0%, #374151 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #374151 0%, #4B5563 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+            transform: translateY(0) scale(1);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+    
+        /* Add icon animation */
+        .card-icon-animate {
+            animation: pulse 2s ease-in-out infinite;
+            display: inline-block;
+        }
+    
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, -0px); }
+        }
