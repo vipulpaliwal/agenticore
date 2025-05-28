@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/png">
+    <title>AgentiCore - Cookie Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ensures the body takes at least the full viewport height and main content expands */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex-grow: 1; /* Allows the main content to take up available space */
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="fixed w-full z-50 transition-colors duration-300" id="header">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center text-2xl font-bold text-red-600">&lt;AgentiCore&gt;</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#what-is-agentic-ai" class="nav-link text-gray-800 hover:text-gray-600 transition-colors">About</a>
+                    <a href="index.html#services" class="nav-link text-gray-800 hover:text-gray-600 transition-colors">Services</a>
+                    <a href="index.html#why-us" class="nav-link text-gray-800 hover:text-gray-600 transition-colors">Why Us</a>
+                    <a href="index.html#case-studies" class="nav-link text-gray-800 hover:text-gray-600 transition-colors">Case Studies</a>
+                    <a href="index.html#contact" class="nav-link text-gray-800 hover:text-gray-600 transition-colors">Contact</a>
+                </div>
+                <a href="index.html#contact" class="hidden md:inline-block bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors">Get Started</a>
+                <button class="md:hidden text-gray-800" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="bg-gray-700 shadow-lg rounded-b-lg mx-4 mt-2">
+                <a href="index.html#what-is-agentic-ai" class="block px-6 py-3 text-white hover:bg-gray-600" onclick="toggleMobileMenu()">About</a>
+                <a href="index.html#services" class="block px-6 py-3 text-white hover:bg-gray-600" onclick="toggleMobileMenu()">Services</a>
+                <a href="index.html#why-us" class="block px-6 py-3 text-white hover:bg-gray-600" onclick="toggleMobileMenu()">Why Us</a>
+                <a href="index.html#case-studies" class="block px-6 py-3 text-white hover:bg-gray-600" onclick="toggleMobileMenu()">Case Studies</a>
+                <a href="index.html#contact" class="block px-6 py-3 text-white hover:bg-gray-600" onclick="toggleMobileMenu()">Contact</a>
+                <a href="index.html#contact" class="block px-6 py-3 bg-white text-gray-700 text-center rounded-lg mx-4 my-4 hover:bg-gray-100" onclick="toggleMobileMenu()">Get Started</a>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 pt-32 pb-16">
+        <h1 class="text-4xl font-bold text-gray-700 mb-6">Cookie Policy</h1>
+        <p class="text-lg text-gray-700">AgentiCore uses cookies to enhance your experience, analyze site usage, and assist in our marketing efforts. By continuing to browse the site, you agree to our use of cookies. You can manage your cookie preferences in your browser settings. For more information, contact us at support@agenticore.com.</p>
+    </main>
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-400">AgentiCore</h3>
+                    <p class="text-gray-400 text-sm">Transforming businesses through intelligent automation and AI-driven solutions.</p>
+                    <div class="mt-6 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-400">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html#hero" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition-colors">Solutions</a></li>
+                        <li><a href="index.html#why-us" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="index.html#success-stories" class="text-gray-400 hover:text-white transition-colors">Success Stories</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-400">Legal</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-1">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-400">Contact Us</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@agenticore.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Innovation Drive, Tech City, TC 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-sm text-gray-500">&copy; 2024 AgentiCore. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // AOS initialization
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // Mobile menu toggle function
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Header scroll behavior (to change background and text color)
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const navLinks = document.querySelectorAll('.nav-link'); // Select all elements with 'nav-link' class
+
+            if (window.scrollY > 50) { // If scrolled more than 50px
+                header.classList.add('bg-white', 'shadow-md');
+                header.classList.remove('bg-transparent'); // Assuming header starts transparent
+                
+                // Change nav links text to a darker gray for contrast against white background
+                navLinks.forEach(link => {
+                    link.classList.remove('text-gray-800', 'hover:text-gray-600'); // Remove initial dark gray
+                    link.classList.add('text-gray-900', 'hover:text-red-600');   // Add even darker gray for scrolled
+                });
+
+                // Change mobile menu button color
+                document.querySelector('#header button.md\\:hidden').classList.remove('text-gray-800');
+                document.querySelector('#header button.md\\:hidden').classList.add('text-gray-900');
+
+
+            } else { // Back at the top
+                header.classList.remove('bg-white', 'shadow-md');
+                header.classList.add('bg-transparent'); // Assuming header returns to transparent
+
+                // Revert nav links text to original dark gray
+                navLinks.forEach(link => {
+                    link.classList.remove('text-gray-900', 'hover:text-red-600'); // Remove scrolled dark gray
+                    link.classList.add('text-gray-800', 'hover:text-gray-600');   // Revert to initial dark gray
+                });
+
+                // Revert mobile menu button color
+                document.querySelector('#header button.md\\:hidden').classList.remove('text-gray-900');
+                document.querySelector('#header button.md\\:hidden').classList.add('text-gray-800');
+            }
+        });
+
+        // Initial check on page load to apply scroll styles if already scrolled
+        document.addEventListener('DOMContentLoaded', function() {
+            // Apply header background based on initial scroll position
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                 header.classList.add('bg-white', 'shadow-md');
+                 header.classList.remove('bg-transparent');
+            } else {
+                 header.classList.remove('bg-white', 'shadow-md');
+                 header.classList.add('bg-transparent');
+            }
+            
+            // Call the scroll function once on load to set initial text colors
+            window.dispatchEvent(new Event('scroll'));
+        });
+    </script>
+</body>
+</html>
