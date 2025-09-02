@@ -15,6 +15,8 @@
     <script src="script.js"></script>
 </head>
 <body class="bg-gray-50">
+<elevenlabs-convai agent-id="agent_2101k45mm652f8cre064smgg1w9q"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
     <!-- Header -->
     <header class="fixed w-full z-50" id="header">
         <nav class="container mx-auto px-6 py-4">
@@ -395,6 +397,20 @@
                 header.classList.add('bg-white', 'shadow-lg');
             } else {
                 header.classList.remove('bg-white', 'shadow-lg');
+            }
+        });
+
+        // Provide website context to ElevenLabs widget
+        window.customElements.whenDefined('elevenlabs-convai').then(() => {
+            const convaiWidget = document.querySelector('elevenlabs-convai');
+            if (convaiWidget) {
+                // Extract text from the main content sections of the page
+                let contextText = '';
+                const contentSections = document.querySelectorAll('section');
+                contentSections.forEach(section => {
+                    contextText += section.innerText + '\n\n';
+                });
+                convaiWidget.context = contextText;
             }
         });
     </script>
